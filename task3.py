@@ -10,6 +10,7 @@ while company != 'None':
     for el in reader1:
         if el[-1]==company:
             print(f'В {company} найдена вакансия: {el[-2]}. З/п составит:{el[-5]}')
-    else:
+
+    if el[-1]!=company:    
         print('К сожалению, ничего не удалось найти.')
     company = input()
